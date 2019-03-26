@@ -5,8 +5,40 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "prettier --write '**/*' --single-quote && eslint .",
+    "lint-fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "eslint-config-bliss": "^3.3.0",
+    "express": "^4.16.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "bliss"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ]
+    }
   },
   "author": "Avi Banerjee",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-google": "^0.12.0",
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-plugin-flowtype": "^3.4.2",
+    "eslint-plugin-flowtype-errors": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.4"
+  }
 }
