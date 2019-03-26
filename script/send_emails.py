@@ -1,5 +1,5 @@
-# MY_ADDRESS = 'avi.banerjee164@gmail.com'
-# PASSWORD = 'PwrMvsOnly97'
+# MY_ADDRESS = 
+# PASSWORD = 
 
 # def get_contacts(names, emails):
 #     # import name, email
